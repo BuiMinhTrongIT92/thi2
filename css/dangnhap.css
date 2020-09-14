@@ -1,0 +1,575 @@
+*{ transition: all 0.5s;
+    box-sizing: border-box;
+}
+div{
+    display:block;
+}
+
+.conntainer{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.row {
+    margin-right: auto;
+    margin-left: auto;
+}
+ 
+    .search{
+        position: relative;
+        margin: 10px 0 0 0;
+        float:right;}
+.thongbao a {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 14px;
+        text-decoration: none;
+        display: inline-block;
+     }
+ .thongbao{
+        background-color: #344555; 
+        text-align: right;
+        box-sizing: border-box;
+        height: 30px;
+        width: 100%;
+        padding: 3px 60px 0px 0px;
+        overflow: hidden;}
+   
+    .row {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+        
+    img{
+        vertical-align: middle;
+        border: 0;
+        width: 120px;
+        height: 120px;
+    
+    }
+    .collapse {
+        display:block;
+        margin-left: -1vw;
+        margin-right: -1vw;
+      
+    }
+    li {
+       text-align: center;
+       list-style-type: none;
+    }
+    ul.navbar-nav> li >a{
+        text-decoration: none;
+    }
+    ul.navbar-nav> li >a:hover{
+        background-color:#0c6134;
+        color:white;
+    }
+    ul.navbar-nav> li:last-child> a:hover{
+        background-color: red;
+        color: white;
+    }
+    li.sale a{
+        animation: doimau2 ease-in-out 0.6s infinite
+    }
+    li.sale a:hover{
+        animation: doimau ease-in-out 0.4s infinite;
+    }
+    @keyframes doimau{
+        from{
+            color:black;
+        }
+        to{
+            color:white;
+        }
+    }
+    @keyframes doimau2{
+        from{
+            color:white;
+        }
+        to{
+            color:red;
+        }
+    }
+    
+    
+    ul.thongbao> li >a:hover{
+        color:#3e95ec;
+        text-decoration:none ;
+    }
+    /* header*/
+    .header .navbar-brand {
+        padding: 0px 10px 0px 60px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .header .navbar.center .navbar-collapse {
+        text-align: center;
+    }
+    .header .nav li {
+        height: 100%;
+        margin-top: 20px;
+    }
+    .header  .thongbao li {
+        list-style: none;
+        position: relative;
+        display: inline-block;
+        margin-left: 20px;
+        text-shadow: 0 1px 2px rgba(255,255,255,0.3);
+    }
+    .header .navbar .navbar-header {
+        width: 14vw;
+        height: 100%;
+        text-align: right;
+        overflow: hidden;
+        margin-top: -7px;
+    }
+    .header .navbar.center .navbar-collapse .nav {
+        float: none;
+        display: inline-block;
+        vertical-align: bottom;
+        height: 60px;
+    }
+    .header .nav li a {
+        padding: 20px 20px 0px 20px;
+        padding-bottom: 0px;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 27px;
+        color: #000;
+        position: relative;
+        background-color: #fff;
+        display: block;
+    }
+    .header .navbar .form-control {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 40px;
+        width: 260px;
+        border-radius: 7px;
+    }
+    ul.menu.icontent{
+        padding:0px;
+        background-color:  rgba(255,255,255,0.6);
+        padding:2px 15px;
+        border-radius: 10px;
+        z-index: 2;
+    }
+    .icontent{
+        position:absolute;
+         opacity: 0;
+         visibility: hidden;
+         transition: opacity .5s;
+     }
+    ul.menu.icontent a{
+        border-radius: 5px;
+        text-decoration: none;
+        padding:1px 65px;
+    }
+    .iimenu:hover .icontent{
+        opacity: 1;
+        visibility: visible;
+       
+    }
+    div.ima{
+        width: 100%;
+    }
+    div.ima >img{
+        width: 100%;
+        height:400px;
+    }
+    ul.menu.icontent a:hover{
+        background-color: lightgoldenrodyellow;
+        text-decoration: none;
+        border-radius: 0px;
+    }
+    .fa-star{
+     animation: doimau3 ease-in-out 0.4s infinite
+    }
+@keyframes doimau3{
+    from{
+        color:rgb(98, 42, 150);
+    }
+    to{
+        color:rgb(201, 236, 44);
+    }
+}
+/* product */
+ul.product {
+    display: inline !important;
+}
+/*GTT*/
+div.gototop a>i{
+    color:rgb(11, 252, 11);
+    font-size:40px;
+    
+}
+div.gototop{
+    position: fixed;
+    display: none;
+    right:20px;
+    bottom: 20px;
+}
+div.gototop a{
+    display: block;
+    padding:20px 15px;
+}
+
+/*  navbar*/
+.row{
+    display:block;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    display:block;
+} 
+.navbar-brand {
+    float: left;
+    padding: 15px 10px;
+    height: 50px;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.navbar-collapse {
+    overflow-x: visible;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+div.navbar.center{
+    display: block !important;
+    width: 100%;
+}
+.navbar-nav>li {
+    float: left;
+}
+.navbar-right {
+    float: right !important;
+}
+.navbar-header {
+    float: left;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+.navbar-form {
+    font-family:Tahoma;
+    font-weight: bold;
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 20px;
+    width: 290px;
+    border-radius: 1px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 1px 0 rgba(255,255,255,0.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 1px 0 rgba(255,255,255,0.1);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+}
+.form-control {
+    display: block;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color:black;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ul.menu.icontent{
+    padding:0px;
+    background-color:  rgba(255,255,255,0.6);
+    padding:2px 15px;
+    border-radius: 10px;
+}
+.icontent{
+    position:absolute;
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity .5s;
+ }
+ul.menu.icontent a{
+    border-radius: 5px;
+    text-decoration: none;
+    padding:1px 65px;
+}
+.iimenu:hover .icontent{
+    opacity: 1;
+    visibility: visible;
+   
+}
+div.ima{
+    width: 100%;
+}
+div.ima >img{
+    width: 100%;
+    height:400px;
+}
+ul.menu.icontent a:hover{
+    background-color: lightgoldenrodyellow;
+    text-decoration: none;
+    border-radius: 0px;
+}
+/* Carousel */
+.banner{
+width: 100%;
+display: block;
+overflow: hidden;
+margin-top: 70px;
+padding:70%;
+ box-sizing: border-box;
+ border-bottom: 10px solid #6c6d6e;
+}
+.carousel.d-block{
+    display: block;
+    width:100%;
+}
+.carousel{
+    position: relative;
+    
+}
+.banners .carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height:1200px;
+}
+.d-block {
+    display: block!important;
+    width: 60px;
+    height:500px;
+}
+
+/* Share */
+ul.sharing{
+    padding:0px;
+
+}
+ul.sharing >li{
+    background-color:rgba(58, 206, 45, 0.6);
+    
+    position: fixed;
+    left: -54px;
+    width: 70px;
+    z-index: 999;
+    border-radius:0;
+    
+}  
+img.ic{
+    border-radius:30px;
+    margin-left:-2px;
+    width:40px;
+}
+ul.sharing >li:nth-child(1){
+    top:182px;
+
+}
+ul.sharing >li:nth-child(2){
+    top:226px;
+}
+ul.sharing >li:nth-child(3){
+    top:270px;
+}
+ .ic{
+     height:30px;
+     left: -176px;
+     margin-left: -40px;
+     margin-right:0px;
+     width:20px;
+ }
+ul.sharing >li:hover{
+    background-color: rgba(58, 206, 45, 0.6);
+    left:0;
+}
+ul.sharing >li a{
+    display:block;
+    padding:7px;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/* Từng sản phẩm */
+section.col100{
+    width: 100%;
+    height: 550px;
+}
+section.col100>img{
+    height: 550px;
+    width: 100%;
+}
+div.dangkiform{
+    position: absolute;
+    top:325px;
+    left:575px;
+    border:2px solid white;
+    border-radius: 10px;
+    padding:20px;
+    background-color: rgb(255, 255, 255,0.8);
+}
+div.dangkiform h6{
+    text-align: center;
+}
+td input{
+    margin:5px;
+    border-radius: 3px;
+    border:1px solid #2cbc62;
+    background-color: rgb(135, 199, 21,0.3);
+}
+div.dangkiform p{
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+    background: #689f39;
+    margin-top: 10px;
+}
+div.dangkiform p:hover{
+    background: #92c763;
+}
+/* FB*/
+
+#n >img{
+    height:50px;
+    width:50px; 
+     border-radius: 3px soild blue;
+}
+#nS>img{
+    height:50px;
+    width:50px; 
+  
+}
+#n{
+    border: 1px solid #4B6EA9;
+    border-radius: 100px;
+
+    font-size: 15px;
+}
+#nS{  border: 1px solid rgb(218, 71, 71);
+    border-radius: 100px;
+  
+    font-size: 15px;
+    
+}
+div.dn
+{
+    margin:10px 10px 10px 0px;
+    height:50px;
+}
+.hastag{
+    width:100%;
+    height: 38px;
+    font-size:20px;
+    font:Helvetica;
+    font-style:italic;
+    text-align:center;
+    background-color:greenyellow;
+}
+/* GỢI Ý */
+.gy{
+    display:flex;
+    height: 148px;
+ margin-bottom: 10px;
+    overflow: hidden;
+}
+div.sp >img:hover{
+    width: 210px;  
+    
+}
+div.sp:hover{
+    width: 210px;  
+    
+    
+}
+div.sp{
+    display:block;
+    margin-right: 0px;
+    height: 152px;
+    width: 172px;
+}
+div.sp >img {
+    animation:zoomIn;
+    width: 170px;
+    margin-left: 47px;
+    height: 152px;
+    object-fit: cover;
+}
+
+/* FOOTER*/
+footer{
+    position: relative;
+    z-index:-1;
+}
+
+.col25{
+    width :25%;
+    position: relative;
+}
+div.contact{
+    display: flex;
+}
+ul.two >li{
+    list-style-type: none;
+    text-align: left;
+    padding:0px 0px 3px;
+}
+ul.two{
+    padding:0;
+}
+h3{
+    text-align: left;
+}
+div.contact{
+    padding:60px 0px 60px 0px;
+    background-color: #4c4c4c;
+    color: white;
+}
+li.social{
+    display: flex;
+}
+div.social li{
+    width: 30px;
+    height: 10px;
+}
+div.iconf > i::before{
+    margin:5px;
+    width: 20px;
+    height: 10px;
+}
+div.logo2> img{
+    position: absolute;
+    vertical-align: middle;
+    width:90%;
+    height:90%;
+    padding-right:10px;
+    left:30;
+}
+
+
